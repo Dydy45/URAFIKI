@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr" data-bs-theme="light">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    
+    <!-- Meta description optimisée (entre 140-160 caractères) -->
+    <meta name="description" content="URAFIKI TECH - Expert en solutions électriques à Kinshasa. Installation, maintenance, automatisation et énergie solaire pour particuliers et entreprises.">
+    
+    <!-- Keywords (moins important aujourd'hui mais toujours utile) -->
+    <meta name="keywords" content="électricité Kinshasa, maintenance électrique, installation solaire, automatisation bâtiment, électricien professionnel, énergie renouvelable RDC">
+    
+    <!-- OpenGraph / Social Media Meta -->
+    <meta property="og:title" content="URAFIKI TECH - Solutions Électriques Innovantes à Kinshasa">
+    <meta property="og:description" content="Expert en installations électriques, énergie solaire et automatisation à Kinshasa. Des solutions sur mesure pour particuliers et professionnels.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.urafikitech.cd">
+    <meta property="og:image" content="https://www.urafikitech.cd/images/og-image.jpg">
+    <meta property="og:locale" content="fr_CD">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="URAFIKI TECH - Solutions Électriques Innovantes à Kinshasa">
+    <meta name="twitter:description" content="Expert en installations électriques et énergie solaire à Kinshasa">
+    
+    <title>URAFIKI TECH | Électricité &amp; Énergie Solaire à Kinshasa</title>
+    
+    <!-- Canonical URL (important pour éviter le contenu dupliqué) -->
+    <link rel="canonical" href="https://www.urafikitech.cd" />
+    
+    <!-- Preload CSS avec fallback amélioré -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" as="style">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" media="print" onload="this.media='all'">
+    
+    <!-- Bootstrap Icons - Correction de la balise manquante -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.css">
+    
+    <!-- Font Awesome - Version plus légère possible -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Google Fonts optimisé -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS personnel - Avec versioning pour le cache -->
+    <link rel="stylesheet" href="style.css?v=1.2" type="text/css" media="all" />
+    
+    <!-- Favicon optimisé -->
+    <link rel="icon" href="favicon/favicon.ico" sizes="any">
+    <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Electrician",
+        "name": "URAFIKI TECH",
+        "url": "https://www.urafikitech.cd",
+        "logo": "https://www.urafikitech.cd/images/logo.png",
+        "description": "Entreprise spécialisée en solutions électriques et énergie solaire à Kinshasa",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kinshasa",
+          "addressCountry": "CD"
+        },
+        "telephone": "+243XXXXXXXXX"
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <!-- Navbar améliorée -->
+      <nav class="navbar navbar-expand-lg navbar-shadow fixed-top animate__animated animate__fadeInDown">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#" aria-label="URAFIKI TECH - Retour à l'accueil">
+            <i class="fas fa-bolt me-2 text-primary" aria-hidden="true"></i>
+            <span>URAFIKI TECH</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navPro"
+            aria-controls="navPro" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navPro">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item active"><a class="nav-link" href="#"><i class="fas fa-home me-1" aria-hidden="true"></i>Accueil</a></li>
+              <li class="nav-item"><a class="nav-link" href="#services"><i class="fas fa-cogs me-1" aria-hidden="true"></i>Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="#projets"><i class="fas fa-briefcase me-1" aria-hidden="true"></i>Projets</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-users me-1" aria-hidden="true"></i>À propos</a>
+                <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                  <li><a class="dropdown-item" href="equipe.html">Notre Équipe</a></li>
+                  <li><a class="dropdown-item" href="vision.html">Notre Vision</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-envelope me-1" aria-hidden="true"></i>Contact</a></li>
+            </ul>
+      
+            <div class="d-flex align-items-center">
+      
+              <button id="themeToggleBtn" class="btn btn-theme-toggle" aria-label="Changer le thème">
+                <i class="far fa-lightbulb" id="bulbIcon"></i> <span class="ms-1 d-none d-md-inline">Thème</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section" aria-labelledby="main-heading">
+        <div class="container text-center hero-content animate__animated animate__fadeInUp">
+          <h1 id="main-heading" class="hero-title">L'Énergie de l'Innovation</h1>
+          <p class="hero-subtitle">Solutions électriques intelligentes pour un monde connecté.</p>
+          <a href="#services" class="btn btn-electric btn-lg mt-3">
+            <i class="fas fa-bolt me-2" aria-hidden="true"></i>Découvrir nos services
+          </a>
+        </div>
+        <!-- Icônes décoratives -->
+        <i class="fas fa-bolt lightning-bg" aria-hidden="true"></i>
+        <i class="fas fa-solar-panel solar-bg" aria-hidden="true"></i>
+        <i class="fas fa-plug plug-bg" aria-hidden="true"></i>
+        <i class="fas fa-charging-station charging-bg" aria-hidden="true"></i>
+      </section>
+      
+      <!-- Nos Services -->
+      <section id="services" class="py-5" aria-labelledby="services-heading">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col text-center">
+              <h2 id="services-heading" class="fw-bold section-title">Nos Services</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column" data-aos="fade-up">
+              <div class="card">
+                <div class="card-content">
+                  <div class="icon-wrapper"><i class="fas fa-hammer"></i></div>
+                  <h3>Installation</h3>
+                  <p>Solutions sur mesure pour vos installations électriques</p>
+                </div>
+              </div>
+            </div>
+            <div class="column" data-aos="fade-up" data-aos-delay="100">
+              <div class="card">
+                <div class="card-content">
+                  <div class="icon-wrapper"><i class="fas fa-brush"></i></div>
+                  <h3>Maintenance</h3>
+                  <p>Interventions rapides, durables et efficaces pour prolonger la vie de vos systèmes.</p>
+                </div>
+              </div>
+            </div>
+            <div class="column" data-aos="fade-up" data-aos-delay="200">
+              <div class="card">
+                <div class="card-content">
+                  <div class="icon-wrapper"><i class="fas fa-wrench"></i></div>
+                  <h3>Automatisation</h3>
+                  <p>Intégration d'automates et objets connectés pour optimiser votre consommation.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Nos Réalisations -->
+      <section id="projets" class="py-5 projects-section" aria-labelledby="projects-heading">
+        <div class="container">
+          <h2 id="projects-heading" class="text-center mb-5 section-title">Nos Projets</h2>
+          
+          <div class="filter-buttons">
+            <button class="btn-filter active" data-filter="all">Tous</button>
+            <button class="btn-filter" data-filter="installation_electrique">Installation Électrique</button>
+            <button class="btn-filter" data-filter="maintenance_industrielle">Maintenance Industrielle</button>
+            <button class="btn-filter" data-filter="solutions_solaires">Solutions Solaires</button>
+          </div>
+          
+          <div class="gallery-grid">
+            <div class="gallery-item" data-category="installation_electrique" data-aos="fade-up">
+              <img srcset="assets/featured-2.jpg" class="gallery-img" alt="Technicien URAFIKI TECH installant un système électrique résidentiel" loading="lazy">
+              <div class="gallery-overlay">
+                <div class="gallery-caption">
+                  <h3>Installation Électrique</h3>
+                  <p>Bâtiments résidentiels avec systèmes de sécurité intégrés et économies d’énergie.</p>
+                </div>
+              </div>
+              <span class="gallery-category">Kinshasa</span>
+            </div>
+            
+            <div class="gallery-item" data-category="maintenance_industrielle" data-aos="fade-up" data-aos-delay="100">
+              <img srcset="assets/featured-2.webp" class="gallery-img" alt="Équipe URAFIKI TECH effectuant la maintenance d'une installation industrielle" loading="lazy">
+              <div class="gallery-overlay">
+                <div class="gallery-caption">
+                  <h3>Maintenance Industrielle</h3>
+                  <p>Suivi technique et optimisation des installations pour grandes structures.</p>
+                </div>
+              </div>
+              <span class="gallery-category">Kinshasa</span>
+            </div>
+            
+            <div class="gallery-item" data-category="solutions_solaires" data-aos="fade-up" data-aos-delay="200">
+              <img srcset="assets/featured-1.jpg" class="gallery-img" alt="Installation solaire photovoltaïque par URAFIKI TECH" loading="lazy">
+              <div class="gallery-overlay">
+                <div class="gallery-caption">
+                  <h3>Solutions Solaires</h3>
+                  <p>Installations photovoltaïques autonomes et hybrides sur mesure.</p>
+                </div>
+              </div>
+              <span class="gallery-category">Kinshasa</span>
+            </div>
+          </div>
+          
+          <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+            <button id="loadMore" class="btn btn-dore btn-lg">
+              <i class="fas fa-plus-circle me-2" aria-hidden="true"></i>Voir plus de photos
+            </button>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Section Contact -->
+      <section id="contact" class="py-5 contact-section" aria-labelledby="contact-heading">
+        <div class="container">
+          <h2 id="contact-heading" class="text-center mb-5 section-title">Contactez-nous</h2>
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <form class="contact-form" data-aos="fade-up">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Nom complet</label>
+                  <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-electric">Envoyer <i class="fas fa-paper-plane ms-2"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h3 class="h5">URAFIKI TECH</h3>
+            <p class="small">Solutions électriques innovantes pour un avenir durable.</p>
+          </div>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h3 class="h5">Liens rapides</h3>
+            <ul class="list-unstyled">
+              <li><a href="#services" class="text-white-50">Services</a></li>
+              <li><a href="#projets" class="text-white-50">Projets</a></li>
+              <li><a href="#contact" class="text-white-50">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h3 class="h5">Contact</h3>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-map-marker-alt me-2"></i> Kinshasa, RDC</li>
+              <li><i class="fas fa-phone me-2"></i> +243 000 000 000</li>
+              <li><i class="fas fa-envelope me-2"></i> contact@urafikitech.cd</li>
+            </ul>
+          </div>
+        </div>
+        <hr class="my-4 bg-secondary">
+        <div class="text-center">
+          <p class="mb-0">&copy; 2025 URAFIKI TECH. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- Bouton WhatsApp -->
+    <a href="https://wa.me/+243820000000" class="whatsapp-btn" target="_blank">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+  
+    <!-- Scripts avec chargement différé -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="scripts.js" defer></script>
+  </body>
+</html>

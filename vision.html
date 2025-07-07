@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fr" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="URAFIKI TECH - Solutions électriques innovantes à Kinshasa. Installation, maintenance et automatisation pour particuliers et professionnels.">
+  <meta name="keywords" content="électricité, Kinshasa, maintenance électrique, installation solaire, automatisation">
+  <meta property="og:title" content="URAFIKI TECH - L'énergie de l'innovation">
+  <meta property="og:type" content="website">
+  <title>URAFIKI TECH - Notre Vision</title>
+
+  <!-- Preload CSS -->
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"></noscript>
+  
+  
+  <!-- CSS Bootstrap icons 1.12.1 CDN -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'"
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css"></noscript>
+
+  <!-- Font Awesome -->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
+
+  <!-- Google Fonts avec chargement optimisé -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+
+  <!-- Style personnalisé -->
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+
+  <!-- Favicon standard -->
+  <link rel="icon" href="favicon/favicon.ico" type="image/x-icon" sizes="16x16 32x32 48x48 64x64">
+  
+  <!-- Pour les appareils Apple -->
+  <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+  
+  <!-- Pour Chrome/Android -->
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-chrome-192x192.png">
+  
+  <!-- Favicon dynamique selon le thème -->
+  <link rel="icon" href="favicon/favicon-light.ico" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="favicon/favicon-dark.ico" media="(prefers-color-scheme: dark)">
+</head>
+
+<body>
+  <header>
+    <!-- Navbar améliorée -->
+    <nav class="navbar navbar-expand-lg navbar-shadow fixed-top animate__animated animate__fadeInDown">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#" aria-label="URAFIKI TECH - Retour à l'accueil">
+          <i class="fas fa-bolt me-2 text-primary" aria-hidden="true"></i>
+          <span>URAFIKI TECH</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navPro"
+          aria-controls="navPro" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navPro">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="index.html"><i class="fas fa-home me-1" aria-hidden="true"></i>Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#services"><i class="fas fa-cogs me-1" aria-hidden="true"></i>Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#projets"><i class="fas fa-briefcase me-1" aria-hidden="true"></i>Projets</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-users me-1" aria-hidden="true"></i>À propos</a>
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <li><a class="dropdown-item" href="equipe.html">Notre Équipe</a></li>
+                <li><a class="dropdown-item active" href="#">Notre Vision</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contact"><i class="fas fa-envelope me-1" aria-hidden="true"></i>Contact</a></li>
+          </ul>
+    
+          <div class="d-flex align-items-center">
+    
+            <button id="themeToggleBtn" class="btn btn-theme-toggle" aria-label="Changer le thème">
+              <i class="far fa-lightbulb" id="bulbIcon"></i> <span class="ms-1 d-none d-md-inline">Thème</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section Redéfinie -->
+    <section class="hero-section vision-hero">
+      <div class="container animate__animated animate__fadeInUp">
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-right">
+            <h1 class="hero-title">Éclairer l'Afrique de Demain</h1>
+            <p class="hero-subtitle">Notre engagement pour une énergie accessible, fiable et verte</p>
+            <div class="hero-stats">
+              <div class="stat-item">
+                <div class="stat-number" data-count="250">0</div>
+                <div class="stat-label">Projets réalisés</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" data-count="15">0</div>
+                <div class="stat-label">Villes électrifiées</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="vision-hero-img">
+              <img srcset="assets/diagonal-building.jpeg" alt="Afrique électrifiée" loading="lazy" class="img-fluid">
+              <div class="img-overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="vision-pattern">
+        <i class="fas fa-bolt"></i>
+        <i class="fas fa-solar-panel"></i>
+        <i class="fas fa-charging-station"></i>
+      </div>
+    </section>
+    
+    <!-- Section Valeurs - Version Interactive -->
+    <section class="py-5 values-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-10 text-center">
+            <h2 class="section-title">Nos Piliers Fondamentaux</h2>
+            <p class="section-subtitle">Ce qui guide chacune de nos décisions</p>
+          </div>
+        </div>
+        
+        <div class="row g-4">
+          <!-- Valeur 1 -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up">
+            <div class="value-card">
+              <div class="value-icon">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <h3>Innovation Radicale</h3>
+              <p>Développer des solutions disruptives adaptées aux réalités africaines.</p>
+              <div class="value-progress">
+                <div class="progress-bar" style="width: 92%"></div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Valeur 2 -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="value-card">
+              <div class="value-icon">
+                <i class="fas fa-hand-holding-heart"></i>
+              </div>
+              <h3>Impact Social</h3>
+              <p>Électrifier 1 million de foyers ruraux d'ici 2030.</p>
+              <div class="value-progress">
+                <div class="progress-bar" style="width: 65%"></div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Valeur 3 -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="value-card">
+              <div class="value-icon">
+                <i class="fas fa-leaf"></i>
+              </div>
+              <h3>Durabilité</h3>
+              <p>100% de nos solutions sont éco-conçues et recyclables.</p>
+              <div class="value-progress">
+                <div class="progress-bar" style="width: 100%"></div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Valeur 4 -->
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="value-card">
+              <div class="value-icon">
+                <i class="fas fa-people-carry"></i>
+              </div>
+              <h3>Expertise Locale</h3>
+              <p>90% de notre main-d'œuvre est formée localement.</p>
+              <div class="value-progress">
+                <div class="progress-bar" style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Timeline Évolutive -->
+    <section class="py-5 timeline-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center">
+            <h2 class="section-title">Notre Roadmap 2030</h2>
+            <p class="section-subtitle">Les étapes clés de notre expansion</p>
+          </div>
+        </div>
+        
+        <div class="timeline-advanced">
+          <!-- Étape 1 -->
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-year">2024</div>
+            <div class="timeline-content">
+              <h3>Phase d'Expansion</h3>
+              <ul>
+                <li>Ouverture de 3 nouvelles antennes régionales</li>
+                <li>Lancement de la formation URAFIKI ACADEMY</li>
+              </ul>
+              <div class="timeline-img">
+                <img srcset="assets/timeline-1.jpeg" alt="Formation technique" loading="lazy">
+              </div>
+            </div>
+          </div>
+          
+          <!-- Étape 2 -->
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-year">2026</div>
+            <div class="timeline-content">
+              <h3>Innovation Technologique</h3>
+              <ul>
+                <li>Centre de R&D à Kinshasa</li>
+                <li>Partenariat avec les universités locales</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Étape 3 -->
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-year">2030</div>
+            <div class="timeline-content">
+              <h3>Leader Régional</h3>
+              <ul>
+                <li>Présence dans 10 pays africains</li>
+                <li>1 million de foyers électrifiés</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- CTA Stratégique -->
+    <section class="py-5 cta-vision">
+      <div class="container text-center">
+        <div class="cta-vision-card" data-aos="zoom-in">
+          <h2>Partagez Notre Vision ?</h2>
+          <p class="cta-vision-text">Devenez partenaire d'une révolution énergétique africaine</p>
+          <div class="cta-vision-buttons">
+            <a href="partenariats.html" class="btn btn-electric btn-lg">
+              <i class="fas fa-handshake me-2"></i>Devenir Partenaire
+            </a>
+            <a href="contact.html" class="btn btn-outline-primary btn-lg">
+              <i class="fas fa-comments me-2"></i>Échanger sur un Projet
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h3 class="h5">URAFIKI TECH</h3>
+          <p class="small">Solutions électriques innovantes pour un avenir durable.</p>
+        </div>
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h3 class="h5">Liens rapides</h3>
+          <ul class="list-unstyled">
+            <li><a href="#services" class="text-white-50">Services</a></li>
+            <li><a href="#projets" class="text-white-50">Projets</a></li>
+            <li><a href="#contact" class="text-white-50">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3 class="h5">Contact</h3>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-map-marker-alt me-2"></i> Kinshasa, RDC</li>
+            <li><i class="fas fa-phone me-2"></i> +243 000 000 000</li>
+            <li><i class="fas fa-envelope me-2"></i> contact@urafikitech.cd</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="my-4 bg-secondary">
+      <div class="text-center">
+        <p class="mb-0">&copy; 2025 URAFIKI TECH. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Bouton WhatsApp -->
+  <a href="https://wa.me/+243820000000" class="whatsapp-btn" target="_blank">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+  
+  <!-- Scripts avec chargement différé -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script src="scripts.js" defer></script>
+</body>
+</html>
