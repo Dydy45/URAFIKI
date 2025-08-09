@@ -116,38 +116,49 @@ if (contactForm) {
   });
 }
 
-// Animation des statistiques
-function animateStats() {
-  const counters = document.querySelectorAll('.stat-number');
-  const speed = 200;
+// Animation des statistiques améliorée
+let statsAnimated = false;
+
+function animateCounter(element) {
+  const target = parseInt(element.getAttribute('data-count'));
+  const duration = 2000; // 2 secondes
+  const increment = target / (duration / 16); // 60 FPS
+  let current = 0;
   
-  counters.forEach(counter => {
-    const target = +counter.getAttribute('data-count');
-    const count = +counter.innerText;
-    const increment = target / speed;
-    
-    if (count < target) {
-      counter.innerText = Math.ceil(count + increment);
-      setTimeout(animateStats, 1);
+  const timer = setInterval(() => {
+    current += increment;
+    if (current >= target) {
+      element.textContent = target;
+      clearInterval(timer);
     } else {
-      counter.innerText = target;
+      element.textContent = Math.floor(current);
+    }
+  }, 16);
+}
+
+function triggerStatsAnimation() {
+  if (!statsAnimated) {
+    const counters = document.querySelectorAll('.stat-number');
+    counters.forEach(counter => {
+      animateCounter(counter);
+    });
+    statsAnimated = true;
+  }
+}
+
+// Observer pour déclencher l'animation quand les stats deviennent visibles
+const statsObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      triggerStatsAnimation();
     }
   });
-}
+}, { threshold: 0.5 });
 
-// Déclenchement au scroll
-window.addEventListener('scroll', function() {
+// Observer les statistiques au chargement
+document.addEventListener('DOMContentLoaded', function() {
   const statsSection = document.querySelector('.hero-stats');
-  if (isElementInViewport(statsSection)) {
-    animateStats();
+  if (statsSection) {
+    statsObserver.observe(statsSection);
   }
 });
-
-// Vérifie si l'élément est visible
-function isElementInViewport(el) {
-  const rect = el.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-  );
-}
